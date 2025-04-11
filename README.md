@@ -1,0 +1,1 @@
+Small random hardware project using ESP8266, DHT11, and lcd I had lying around. I've been very congested when I wake up and want to track the conditions of my room while I sleep at night, built this to solve that problem.
