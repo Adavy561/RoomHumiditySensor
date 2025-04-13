@@ -47,12 +47,12 @@ void loop() {
     dht_temperature_fahrenheit = dht.convertCtoF(dht_temperature_celcius);
     dht_humidity = dht.readHumidity();
 
-    temperature->save(dht_humidity);
+    humidity->save(dht_humidity);
     Serial.print("Humidity: ");
     Serial.print(dht_humidity);
     Serial.println("%");
 
-    humidity->save(dht_humidity);
+    temperature->save(dht_temperature_fahrenheit);
     Serial.print("Temperature: ");
     Serial.print(dht_temperature_fahrenheit);
     Serial.println(" *F");
